@@ -168,3 +168,12 @@ gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
 gulp.task('default', () => {
   runSequence(['clean', 'wiredep'], 'build');
 });
+
+// Deploys the site to GitHub Pages
+gulp.task('deploy', () => {
+  return gulp.src('./dist/**/*')
+    .pipe($.ghPages({
+      origin: 'github',
+      branch: 'master'
+    }));
+});
