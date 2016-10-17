@@ -1,10 +1,16 @@
 // bower:scss
 // endbower
 
+$main-font: 'Assistant', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$mono-font:  monospace, sans-serif;
+
+$color-accent: #007090;
+$color-primary: #EAEBED;
+
 body {
-  background: #007090;
-  font-family: 'Assistant', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #EAEBED;
+  background: $color-accent;
+  font-family: $main-font;
+  color: $color-primary;
   font-size: 12px;
   margin: 0
 }
@@ -22,7 +28,7 @@ body {
     font-size: 5rem;
   }
 
-  p .coming-soon {
+  .coming-soon {
     letter-spacing: 2.5px;
     font-weight: bold;
     opacity: .8;
@@ -30,8 +36,9 @@ body {
 }
 
 .browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
+  margin: 1em 0;
+  background: $color-primary;
   color: #000;
-  padding: 0.2em 0;
+  padding: 0.2em 1em;
+  font-family: $mono-font;
 }
