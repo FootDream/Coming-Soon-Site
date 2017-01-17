@@ -3,7 +3,7 @@
 $main-font: 'Assistant', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $mono-font:  monospace, sans-serif;
 
-$color-accent: #007090;
+$color-accent: #2e5b82;
 $color-primary: #EAEBED;
 
 body {
@@ -32,6 +32,14 @@ body {
     opacity: .8;
   }
 }
+h3 {
+  position: fixed;
+  bottom: 0; 
+  width:100%; 
+  text-align: center;
+  font-size: 1.5em;
+  padding-bottom: 30px;
+}
 
 .browserupgrade {
   margin: 1em 0;
@@ -39,6 +47,14 @@ body {
   color: #000;
   padding: 0.2em 1em;
   font-family: $mono-font;
+}
+img.resize{
+   width:200px;
+}
+
+a:link{
+  color: #66cc9a;
+  text-decoration:none
 }
 
 @include media("<tablet") {
